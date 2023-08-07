@@ -25,8 +25,21 @@ body {
 }
 
 a {
+    font-family: 'Pokemon-Gb', Arial, Helvetica, sans-serif;
     text-decoration: none;
     color:var(--text);
+}
+
+button {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 10px;
+    margin: 5px;
+}
+
+button:active {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
 }
 
 .page-title {
@@ -66,4 +79,39 @@ a {
     grid-template-columns: 250px 250px 250px 250px 250px 250px;
     gap:20px;
     justify-content: center;
+}
+
+.card {
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.card img {
+    width: 250px;
+}
+
+@media all and (max-width: 800px) {
+    .content-cards {
+        display:grid;
+        grid-template-columns: 50px 50px 50px 50px 50px 50px;
+        gap:20px;
+        justify-content: center;
+    }   
+    
+    .card {
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        background-color: var(--secondary);
+        border-radius: 5px;
+    }
+
+    .card img {
+        width: 50px;
+    }
+
+    h4 {
+        font-size: 6px;
+    }
 }

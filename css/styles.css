@@ -1,0 +1,57 @@
+:root {
+    --background: #06111e;
+    --primary: #d84f8d;
+    --secondary: #102237;
+    --accent: #2d24d6;
+    --text: #ffffff;
+}
+
+/* ===Fonts===
+    https://www.fontspace.com/category/pokemon
+*/
+@font-face {
+    font-family: 'Pokemon';
+    src: url(../fonts/PokemonSolidNormal-xyWR.ttf);
+}
+@font-face {
+    font-family: 'Pokemon-Gb';
+    src: url(../fonts/PokemonGb-RAeo.ttf);
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Pokemon-Gb', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:var(--text);
+}
+
+.page-title {
+    font-family: 'Pokemon', Arial, Helvetica, sans-serif;
+}
+
+.page-header-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-items li {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--primary);
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+}

@@ -55,3 +55,15 @@ a {
     display: flex;
     justify-content: center;
 }
+
+.content-video {
+    display:flex;
+    justify-content: center;
+}
+
+.content-cards {
+    display:grid;
+    grid-template-columns: 250px 250px 250px 250px 250px 250px;
+    gap:20px;
+    justify-content: center;
+}

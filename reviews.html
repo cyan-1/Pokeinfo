@@ -15,14 +15,38 @@
                 </header>
                 <nav>
                     <ul class="nav-items">
-                        <button><a href="index.html">Home</a></button>
-                        <button><a href="pokedex.html">Pokédex</a></button>
-                        <button><a href="reviews.html">Reviews</a></button>
-                        <button><a href="about.html">About</a></button>
+                        <a href="index.html"> <button> Home </button> </a>
+                        <a href="pokedex.html"> <button> Pokédex </button> </a>
+                        <a href="reviews.html"> <button> Reviews </button> </a>
+                        <a href="about.html"> <button> About </button> </a>    
                     </ul>
                 </nav>
             </div>    
+
+            <div id="page-content">
+                <div class="content-header">
+                    <h2>Reviews</h2>
+                </div>
+                
+                <div class="review-add">
+                    <h3>Add Review</h3>
+                    <form id="review-form">
+                        <input class="add-review-username" id="add-review-username" type="text" placeholder="Username" required>
+                        <input class="add-review-rating" id="add-review-rating" type="number" min="1" max="5" placeholder="Rating" required>
+                        <input class="add-review-date" id="add-review-date" type="date">
+                        <br>
+                        <textarea class="add-review-content" id="add-review-content" maxlength="250" placeholder="Why do you like or dislike this site?"></textarea>
+                        <button class="add-review-button" type="button" onclick="addReview()">Add</button>
+                    </form>
+                </div>
+
+                <div class="review-cards" id="review-cards">
+                    <!-- dynamically load reviews -->
+                </div>
+            </div>
         </div>
 
+        <script src="./js/data.js"></script>
+        <script src="./js/reviews.js"></script>
     </body>
 </html>

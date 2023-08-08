@@ -4,7 +4,7 @@ async function fetchPokemonData(i) {
 }
 
 async function renderPokedex() {
-    const cards = document.getElementById("content-cards");
+    const cards = document.getElementById("pokedex-cards");
     cards.innerHTML = "Loading...";
 
     try {
@@ -19,7 +19,7 @@ async function renderPokedex() {
 
         for (let i = 0; i < pokemonData.length; i++) {
             const card = document.createElement("div");
-            card.classList.add("card");
+            card.classList.add("pokedex-card");
 
             const pokemonImg = document.createElement("img");
             pokemonImg.src = pokemonData[i].sprites.front_default;
@@ -30,6 +30,10 @@ async function renderPokedex() {
             card.appendChild(pokemonImg);
             card.appendChild(pokemonName);
             cards.appendChild(card);
+
+            card.addEventListener("click", function() {
+                window.open(`https://www.pokemon.com/us/pokedex/${i+1}`, "_blank")
+            });
         }
     } catch (err) {
         err;

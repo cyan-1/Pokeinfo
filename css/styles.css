@@ -24,17 +24,14 @@ body {
     font-family: 'Pokemon-Gb', Arial, Helvetica, sans-serif;
 }
 
-a {
-    font-family: 'Pokemon-Gb', Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color:var(--text);
-}
-
 button {
     background-color: var(--primary);
     border-color: var(--primary);
     padding: 10px;
     margin: 5px;
+
+    font-family: 'Pokemon-Gb', Arial, Helvetica, sans-serif;
+    color:var(--text);
 }
 
 button:active {
@@ -58,12 +55,6 @@ button:active {
     list-style-type: none;
 }
 
-.nav-items li {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--primary);
-}
-
 .content-header {
     display: flex;
     justify-content: center;
@@ -74,32 +65,83 @@ button:active {
     justify-content: center;
 }
 
-.content-cards {
+.pokedex-cards {
     display:grid;
     grid-template-columns: 250px 250px 250px 250px 250px 250px;
     gap:20px;
     justify-content: center;
 }
 
-.card {
+.pokedex-card {
     text-align: center;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pokedex-card img {
+    width: 250px;
+}
+
+.review-add {
+    display:grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.add-review-content {
+    width: 100%;
+}
+
+.add-review-button {
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: 40%;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.review-card {
+    padding: 10px;
+    margin: 10px;
     background-color: var(--secondary);
     border-radius: 5px;
 }
 
-.card img {
-    width: 250px;
+.rating-date {
+    display: grid;
+    grid-template-columns: 10% 10%;
+    font-size: 15px;
 }
 
 @media all and (max-width: 800px) {
-    .content-cards {
+    .page-header-items {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    
+
+    button {
+        padding: 5px;
+        margin: 5px;
+        font-size: 6px;
+        text-align: center;
+    }    
+
+    .pokedex-cards {
         display:grid;
         grid-template-columns: 50px 50px 50px 50px 50px 50px;
         gap:20px;
         justify-content: center;
     }   
     
-    .card {
+    .pokedex-card {
         width: 100%;
         height: 70px;
         text-align: center;
@@ -107,11 +149,35 @@ button:active {
         border-radius: 5px;
     }
 
-    .card img {
+    .pokedex-card img {
         width: 50px;
     }
 
-    h4 {
+    .pokedex-card h4 {
         font-size: 6px;
+    }
+
+    .add-review-button {
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+    }
+    
+    .review-cards {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        gap: 10px;
+        font-size: 15px;
+    }
+    
+    .rating-date {
+        display: grid;
+        grid-template-columns: 10% 10%;
+        font-size: 8px;
+    }
+
+    .review-card h4 {
+        font-size: 8px;
     }
 }

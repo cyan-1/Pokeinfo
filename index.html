@@ -36,13 +36,26 @@
             </div>
             
             <div class="content-info">
-                <p>
-                    This site is dedicated to inform users about the first genaration Pokémon.
-                    Pokémon is a RPG game where you can catch creatures called Pokémon and train them to use them for battle.
-                    The first Pokémon game were the Pokémon Red and Pokémon Blue version. In the game to win, you must defeat 8 gyms by battling 
-                    the gym trainers and collecting their badges, after collecting all the 8 badges you must fight the elite four, and only after defeating them
-                    you can challange the Pokémon champion whom you must defeat to win the game.  
-                </p>
+                <div class="home-information">
+                    <p>
+                        This site is dedicated to inform users about the first genaration Pokémon.
+                        Pokémon is a RPG game where you can catch creatures called Pokémon and train them to use them for battle.
+                        The first Pokémon game were the Pokémon Red and Pokémon Blue version. In the game to win, you must defeat 8 gyms by battling 
+                        the gym trainers and collecting their badges, after collecting all the 8 badges you must fight the elite four, and only after defeating them
+                        you can challange the Pokémon champion whom you must defeat to win the game.  
+                    </p>
+                </div>
+
+                <div class="signup-newsletter">
+                    <h4>
+                        Sign up for the newsletter
+                    </h4>
+                    <form name="signup" method="post" action="https://httpbin.org/post">
+                        <input type="email" id="email" placeholder="Enter email" required>
+                        <input type="hidden" id="name" value="cyan">
+                        <button type="submit" id="join">Join</button>
+                    </form>
+                </div>
             </div>
         </div>
     </body>

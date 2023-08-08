@@ -27,6 +27,7 @@ body {
 button {
     background-color: var(--primary);
     border-color: var(--primary);
+    border-radius: 5px;
     padding: 10px;
     margin: 5px;
 
@@ -62,6 +63,15 @@ button:active {
 
 .content-video {
     display:flex;
+    justify-content: center;
+}
+
+.home-information {
+    margin: 50px;
+}
+
+.signup-newsletter {
+    display:grid;
     justify-content: center;
 }
 
@@ -126,7 +136,6 @@ button:active {
         grid-template-columns: 30% 70%;
     }
     
-
     button {
         padding: 5px;
         margin: 5px;

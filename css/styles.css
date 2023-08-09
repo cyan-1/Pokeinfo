@@ -73,6 +73,7 @@ button:active {
 .signup-newsletter {
     display:grid;
     justify-content: center;
+    justify-items: center;
 }
 
 .pokedex-cards {
@@ -128,6 +129,12 @@ button:active {
     display: grid;
     grid-template-columns: 10% 10%;
     font-size: 15px;
+}
+
+.about-me-info {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 50%;
 }
 
 @media all and (max-width: 800px) {

@@ -12,7 +12,6 @@ function renderReviews() {
         const ratingDate = document.createElement("div");
         ratingDate.classList.add("rating-date");
 
-
         const username = document.createElement("h4");
         username.innerText=review.username;
 

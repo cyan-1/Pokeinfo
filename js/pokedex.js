@@ -23,12 +23,19 @@ async function renderPokedex() {
 
             const pokemonImg = document.createElement("img");
             pokemonImg.src = pokemonData[i].sprites.front_default;
+            
+            const pokedexNum = document.createElement("h4");
+            pokedexNum.textContent = "#" + String(i + 1).padStart(4,'0');
 
             const pokemonName = document.createElement("h4");
             pokemonName.textContent = pokemonData[i].name;
 
+
+
             card.appendChild(pokemonImg);
+            card.appendChild(pokedexNum);
             card.appendChild(pokemonName);
+
             cards.appendChild(card);
 
             card.addEventListener("click", function() {

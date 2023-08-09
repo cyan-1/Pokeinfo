@@ -15,9 +15,9 @@ function renderReviews() {
         const username = document.createElement("h4");
         username.innerText=review.username;
 
-        const rating = document.createElement("p");
+        const rating = document.createElement("h4");
         rating.innerText = `${review.rating}/5`;
-        const date = document.createElement("p");
+        const date = document.createElement("h4");
         date.innerText = review.date;
 
         ratingDate.appendChild(rating);

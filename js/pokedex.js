@@ -30,8 +30,6 @@ async function renderPokedex() {
             const pokemonName = document.createElement("h4");
             pokemonName.textContent = pokemonData[i].name;
 
-
-
             card.appendChild(pokemonImg);
             card.appendChild(pokedexNum);
             card.appendChild(pokemonName);
